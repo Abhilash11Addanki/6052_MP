@@ -7,7 +7,12 @@ import android.view.View;
 import android.widget.Button;
 
 public class TPOHomeActivity extends AppCompatActivity {
-    Button addCompany;
+    Button addCompany, addPreviousPapers, addSelectedStudents;
+
+    @Override
+    public void onBackPressed() {
+//        super.onBackPressed();
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +24,24 @@ public class TPOHomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(TPOHomeActivity.this, CompanyActivity.class);
+                startActivity(i);
+            }
+        });
+
+        addPreviousPapers = (Button) findViewById(R.id.button12);
+        addPreviousPapers.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(TPOHomeActivity.this, PapersActivity.class);
+                startActivity(i);
+            }
+        });
+
+        addSelectedStudents = (Button) findViewById(R.id.button13);
+        addSelectedStudents.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(TPOHomeActivity.this, SelectedStudentsActivity.class);
                 startActivity(i);
             }
         });

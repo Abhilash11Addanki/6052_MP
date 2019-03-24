@@ -20,12 +20,6 @@
             android:text="View Company Details" />
 
         <Button
-            android:id="@+id/button15"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="View Notifications" />
-
-        <Button
             android:id="@+id/button16"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

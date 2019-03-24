@@ -34,18 +34,18 @@ public class TPOActivity extends AppCompatActivity {
         btnSignin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               String id = inputId.getText().toString();
-               String password = inputPassword.getText().toString();
-               if (TextUtils.isEmpty(id)) {
-                   Toast.makeText(getApplicationContext(), "Enter valid Id!", Toast.LENGTH_SHORT).show();
-                   return;
-               }
-               else if (TextUtils.isEmpty(password)) {
-                   Toast.makeText(getApplicationContext(), "Enter password!", Toast.LENGTH_SHORT).show();
-                   return;
-               } else {
+                String id = inputId.getText().toString();
+                String password = inputPassword.getText().toString();
+                if (TextUtils.isEmpty(id)) {
+                    Toast.makeText(getApplicationContext(), "Enter valid Id!", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+                else if (TextUtils.isEmpty(password)) {
+                    Toast.makeText(getApplicationContext(), "Enter password!", Toast.LENGTH_SHORT).show();
+                    return;
+                } else {
                     AllowAccessToAccount(id, password);
-               }
+                }
             }
 
             private void AllowAccessToAccount(final String id, final String password) {

@@ -8,6 +8,12 @@ import android.widget.Button;
 
 public class AdminActivity extends AppCompatActivity {
     Button b1, b2;
+
+    @Override
+    public void onBackPressed() {
+//        super.onBackPressed();
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
